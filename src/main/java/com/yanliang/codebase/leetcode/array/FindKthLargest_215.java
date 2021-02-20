@@ -1,5 +1,7 @@
 package com.yanliang.codebase.leetcode.array;
 
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -9,6 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class FindKthLargest_215 {
 
     public static void main(String[] args) {
+        LinkedBlockingQueue
         int[] nums = {3,2,1,5,6,4};
         System.out.println(findKthLargest(nums, 2));
     }
@@ -22,7 +25,7 @@ public class FindKthLargest_215 {
             int index = partition(nums, left, right);
             if (index == target) {
                 return nums[index];
-            } else if (index < k){
+            } else if (index < target){
                 left = index + 1;
             } else {
                 right = index - 1;
@@ -31,15 +34,15 @@ public class FindKthLargest_215 {
     }
 
     public static int partition(int[] nums, int left, int right) {
-        int tmp = nums[left];
+        int tmp = nums[right];
         int j = left - 1;
-        for (int i = left; i <= right; i ++) {
-            if (nums[i] < tmp) {
+        for (int i = left; i < right; i ++) {
+            if (nums[i] <= tmp) {
                 ++ j;
                 swap(nums, j, i);
             }
         }
-        swap(nums, j, left);
+        swap(nums, ++ j, right);
         return j;
     }
 
