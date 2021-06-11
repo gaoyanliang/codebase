@@ -1,9 +1,5 @@
 package com.yanliang.codebase.leetcode.array;
 
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.locks.AbstractQueuedSynchronizer;
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * @author yanliang
  * @date 2021/2/1922:59
@@ -11,7 +7,6 @@ import java.util.concurrent.locks.ReentrantLock;
 public class FindKthLargest_215 {
 
     public static void main(String[] args) {
-        LinkedBlockingQueue
         int[] nums = {3,2,1,5,6,4};
         System.out.println(findKthLargest(nums, 2));
     }
