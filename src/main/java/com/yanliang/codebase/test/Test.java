@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 import java.util.Stack;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * @author yanliang
@@ -16,7 +17,6 @@ import java.util.Stack;
 public class Test {
 
 	public static void main(String[] args) {
-
 		System.out.println(topKFrequent(new int[]{1,1,1,2,2,3}, 2));
 	}
 
