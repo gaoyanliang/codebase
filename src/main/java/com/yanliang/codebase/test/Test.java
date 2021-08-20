@@ -37,19 +37,15 @@ public class Test {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		Map<String, Set<KK>> map = new HashMap<>();
-		map.putIfAbsent("gao", new HashSet<>());
-		map.get("gao").add(new KK("1"));
-		map.get("gao").add(new KK("2"));
-		map.get("gao").add(new KK("3"));
-		map.get("gao").add(new KK("4"));
 
-
-		map.getOrDefault("gao", new HashSet<>()).remove(new KK("1"));
-
-		System.out.println(map.get("gao").size());
-
-		aaa(new KK("4"));
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < 10; j++) {
+				if (j == 0) {
+					System.out.println("000000");
+					break;
+				}
+			}
+		}
 
 
 //		System.out.println(topKFrequent(new int[]{1,1,1,2,2,3}, 2));
