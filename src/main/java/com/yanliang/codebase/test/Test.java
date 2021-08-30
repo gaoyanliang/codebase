@@ -35,17 +35,23 @@ public class Test {
 
 	}
 
+	private static final int COUNT_BITS = Integer.SIZE - 3;
+	private static final int CAPACITY   = (1 << COUNT_BITS) - 1;
+
+	// runState is stored in the high-order bits
+
+	private static final int RUNNING    = -1 << COUNT_BITS;
+	private static final int SHUTDOWN   =  0 << COUNT_BITS;
+	private static final int STOP       =  1 << COUNT_BITS;
+	private static final int TIDYING    =  2 << COUNT_BITS;
+	private static final int TERMINATED =  3 << COUNT_BITS;
+
 	public static void main(String[] args) throws InterruptedException {
 
 
-		for (int i = 0; i < 10; i++) {
-			for (int j = 0; j < 10; j++) {
-				if (j == 0) {
-					System.out.println("000000");
-					break;
-				}
-			}
-		}
+		String sss = "/a/b/c/d";
+		String[] split = sss.split("/");
+		System.out.println();
 
 
 //		System.out.println(topKFrequent(new int[]{1,1,1,2,2,3}, 2));

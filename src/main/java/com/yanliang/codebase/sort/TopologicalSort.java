@@ -12,7 +12,7 @@ import java.util.Stack;
  * 现有n个编译项，编号为0 ~ n-1。给定一个二维数组，表示编译项之间有依赖关系。如[0, 1]表示1依赖于0。
  *
  * 若存在循环依赖则返回空；不存在依赖则返回可行的编译顺序。
- * 
+ *
  * @author yanliang
  */
 public class TopologicalSort {
