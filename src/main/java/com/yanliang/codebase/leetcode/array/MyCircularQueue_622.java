@@ -14,7 +14,7 @@ package com.yanliang.codebase.leetcode.array;
  * deQueue(): 从循环队列中删除一个元素。如果成功删除则返回真。
  * isEmpty(): 检查循环队列是否为空。
  * isFull(): 检查循环队列是否已满。
- * 
+ *
  * @author yanliang
  */
 public class MyCircularQueue_622 {
