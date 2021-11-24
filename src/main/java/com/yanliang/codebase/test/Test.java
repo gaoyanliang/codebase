@@ -1,14 +1,13 @@
 package com.yanliang.codebase.test;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Random;
 import java.util.Set;
-import java.util.Stack;
-import java.util.concurrent.BlockingQueue;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 /**
  * @author yanliang
@@ -16,6 +15,7 @@ import java.util.concurrent.BlockingQueue;
  */
 public class Test {
 
+<<<<<<< HEAD
 	public static void main(String[] args) {
 		System.out.println(topKFrequent(new int[]{1,1,1,2,2,3}, 2));
 		System.out.println(validIPAddress("172.16.254.1"));
@@ -54,7 +54,150 @@ public class Test {
 		}
 		return "IPv4";
 
+=======
+	@Data
+	@AllArgsConstructor
+	public static class KK{
+		private String k;
+
+		@Override
+		public boolean equals(Object o) {
+			if (this == o) return true;
+			if (o == null || getClass() != o.getClass()) return false;
+			KK that = (KK) o;
+			return this.k.equals(that.k);
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(k);
+		}
+
 	}
+
+	private static final int COUNT_BITS = Integer.SIZE - 3;
+	private static final int CAPACITY   = (1 << COUNT_BITS) - 1;
+
+	// runState is stored in the high-order bits
+
+	private static final int RUNNING    = -1 << COUNT_BITS;
+	private static final int SHUTDOWN   =  0 << COUNT_BITS;
+	private static final int STOP       =  1 << COUNT_BITS;
+	private static final int TIDYING    =  2 << COUNT_BITS;
+	private static final int TERMINATED =  3 << COUNT_BITS;
+
+	public static void main(String[] args) throws InterruptedException {
+
+
+		String sss = "/a/b/c/d";
+		String[] split = sss.split("/");
+		System.out.println();
+
+
+//		System.out.println(topKFrequent(new int[]{1,1,1,2,2,3}, 2));
+
+		//System.out.println(minWindow("ADOBECODEBANC", "ABC"));
+//		System.out.println(minWindow("cabwefgewcwaefgcf", "cae"));
+//		int compress = compress(new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c'});
+//		int compress = compress(new char[]{'a', 'a', 'b', 'b', 'c', 'c', 'c', 'd', 'd'});
+//		System.out.println(compress);
+>>>>>>> 7571f97de788c7f1d318b9d4625900e6d802c38f
+	}
+
+	public static void aaa(Object o) {
+		System.out.println(o.getClass().getName());
+		Class<?> aClass = null;
+		try {
+			aClass = Class.forName(o.getClass().getName());
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		System.out.println(aClass.getName());
+	}
+
+
+
+	public static int compress(char[] chars) {
+		int j = 0, start = 0;
+		int len = chars.length;
+		for (int i = 0; i < len; i ++) {
+			if (i + 1 == len || chars[i] != chars[i + 1]) {
+				chars[j ++] = chars[i];
+				if (i > start) {
+					for (char ch: toChar(i - start + 1)) {
+						chars[j ++] = ch;
+					}
+				}
+				start = i + 1;
+			}
+		}
+		return j;
+	}
+
+	public static char[] toChar(int n) {
+		String sn = n + "";
+		return sn.toCharArray();
+	}
+
+
+
+	public static String minWindow(String s, String t) {
+		Map<Character, Integer> map = new HashMap<>();
+		Map<Character, Integer> windows = new HashMap<>();
+
+		for (int i = 0; i < t.length(); i ++) {
+			addValue(map, t.charAt(i));
+		}
+
+		int l = 0, r = 0, len = s.length(), vaild = 0;
+		int res = Integer.MAX_VALUE, start = 0;
+		while (r < len) {
+			char ch = s.charAt(r ++);
+			if (map.containsKey(ch)) {
+				addValue(windows, ch);
+				if (getValue(map, ch) == getValue(windows, ch)) vaild ++;
+			}
+
+			while (vaild == map.size()) {
+				if (r - l < res) {
+					res = r - l;
+					start = l;
+				}
+				char tmp = s.charAt(l ++);
+				if (map.containsKey(tmp)) {
+					subValue(windows, tmp);
+					if (getValue(windows, tmp) < getValue(map, tmp)) vaild --;
+				}
+			}
+		}
+		return res == Integer.MAX_VALUE ? "" : s.substring(start, res + start);
+	}
+
+
+
+
+
+	public static int getValue(Map<Character, Integer> map, Character key) {
+		return map.getOrDefault(key, 0);
+	}
+
+	public static void addValue(Map<Character, Integer> map, Character key) {
+		map.put(key, map.getOrDefault(key, 0) + 1);
+	}
+
+	public static void subValue(Map<Character, Integer> map, Character key) {
+		if (getValue(map, key) > 0) {
+			map.put(key, map.get(key) - 1);
+		}
+	}
+
+
+
+
+
+
+
+
 
 	static Random random = new Random();
 	public static int[] topKFrequent(int[] nums, int k) {

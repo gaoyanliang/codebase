@@ -87,7 +87,7 @@ public class HeapSort {
 			nums[parent] = nums[lChild];
 			//选取孩子结点的左孩子结点,继续向下筛选
 			parent = lChild;
-			lChild = 2 * lChild + 1;
+			lChild = 2 * parent + 1;
 		}
 		//将父节点赋值给孩子节点
 		nums[parent] = tmp;
