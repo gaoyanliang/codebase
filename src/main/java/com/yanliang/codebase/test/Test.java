@@ -18,6 +18,42 @@ public class Test {
 
 	public static void main(String[] args) {
 		System.out.println(topKFrequent(new int[]{1,1,1,2,2,3}, 2));
+		System.out.println(validIPAddress("172.16.254.1"));
+	}
+
+	public static String validIPAddress(String IP) {
+		if (IP.contains(".")) {
+			return validIPv4(IP);
+		} else if (IP.contains(":")) {
+			return validIPv6(IP);
+		}
+		return "Neither";
+	}
+
+	public static String validIPv6(String IP) {
+		String[] ips = IP.split(":", -1);
+		String chs = "0123456789abcdefABCDEF";
+		for (String ip: ips) {
+			if (ip.length() == 0 || ip.length() > 4) return "Neither";
+			for (char ch: ip.toCharArray()) {
+				if (chs.indexOf(ch) == -1) return "Neither";
+			}
+		}
+		return "IPv6";
+	}
+
+	public static String validIPv4(String IP) {
+		String[] ips = IP.split("\\.", -1);
+		for (String ip: ips) {
+			if (ip.length() == 0 || ip.length() > 3) return "Neither";
+			if (ip.charAt(0) == '0' && ip.length() != 1) return "Neither";
+			for (Character ch: ip.toCharArray()) {
+				if (ch < '0' || ch > '9') return "Neither";
+			}
+			if (Integer.parseInt(ip) > 255) return "Neither";
+		}
+		return "IPv4";
+
 	}
 
 	static Random random = new Random();
