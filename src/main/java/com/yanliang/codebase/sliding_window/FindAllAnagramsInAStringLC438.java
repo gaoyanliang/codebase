@@ -81,9 +81,11 @@ public class FindAllAnagramsInAStringLC438 {
 				}
 				index = s.charAt(left ++) - 'a';
 				if (need[index] != 0) {
-					// 一下两条语句调换位置就不正确      why？？？？？？
 					if (windows[index] == need[index]) valid --;
 					windows[index] --;
+					// 一下两条语句不正确      why？？？？？？
+//					windows[index] --;
+//					if (windows[index] < need[index]) valid --;
 				}
 			}
 		}
