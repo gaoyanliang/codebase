@@ -6,7 +6,7 @@ package com.yanliang.codebase.leetcode.lru;
 public class Main {
 	public static void main(String[] args) {
 		/* 缓存容量为 2 */
-		LruCache cache = new LruCache(2);
+		LruCacheLC146 cache = new LruCacheLC146(2);
 		// 你可以把 cache 理解成一个队列
 		// 假设左边是队头，右边是队尾
 		// 最近使用的排在队头，久未使用的排在队尾

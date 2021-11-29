@@ -11,6 +11,22 @@ import java.util.Scanner;
  *
  * 如果 S 中不存在，返回 “”
  * 如果 S 中存在，保证唯一
+ * 注意：如果 s 中存在这样的子串，我们保证它是唯一的答案。
+ *
+ * 示例 1：
+ *
+ * 输入：s = "ADOBECODEBANC", t = "ABC"
+ * 输出："BANC"
+ * 示例 2：
+ *
+ * 输入：s = "a", t = "a"
+ * 输出："a"
+ *
+ *
+ * 提示：
+ *
+ * 1 <= s.length, t.length <= 105
+ * s 和 t 由英文字母组成
  *
  * @author yanliang
  */
@@ -44,14 +60,18 @@ public class MinimumWindowSubstringLC76{
 		}
 
 		int left = 0, right = 0, vaild = 0;
+		// 记录最小覆盖子串的起始索引及长度
 		int len = Integer.MAX_VALUE, start = 0;
 		while (right < s.length()) {
+			// in 是将移入窗口的字符 & 右移窗口
 			char in = s.charAt(right ++);
+			// 更新窗口内数据
 			if (need.containsKey(in)) {
 				windows.put(in, windows.getOrDefault(in, 0) + 1);
 				if (windows.get(in).equals(need.get(in))) vaild ++;
 			}
 
+			// 判断左侧窗口是否要收缩
 			while (vaild == need.size()) {
 				if (right - left < len) {
 					len = right - left;
