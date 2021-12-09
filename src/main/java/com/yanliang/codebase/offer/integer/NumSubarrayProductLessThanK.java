@@ -23,7 +23,7 @@ package com.yanliang.codebase.offer.integer;
  *
  * 1 <= nums.length <= 3 * 104
  * 1 <= nums[i] <= 1000
- * 0 <= k <= 106
+ * 0 <= k <= 106 
  */
 public class NumSubarrayProductLessThanK {
 
