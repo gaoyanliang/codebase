@@ -53,7 +53,7 @@ public class SimplifyPath_71 {
         List<String> res = new ArrayList<>();
         for (String s : strs) {
             if (s.equals(".")) continue;
-            else if (s.equals("..")) {
+            else if (s.equals("src/test")) {
                 if (res.size() > 0) res.remove(res.size() - 1);
             } else {
                 res.add(s);
