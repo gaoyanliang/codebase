@@ -11,6 +11,10 @@
 9. [使用三个线程,交替进行。要求顺序打印从1~100（每个线程一次打印 10）个数 reentrantlock](algorithm/src/main/java/com/yanliang/algo/interview/thread/ThreeThreadPrint3.java)
 10. [使用三个线程,每个线程打印10个数，交替进行。要求顺序打印从1~100（每个线程一次打印 10）个数](algorithm/src/main/java/com/yanliang/algo/interview/thread/ThreeThreadPrint4.java)
 11. [实例化三个线程，一个线程打印a，一个线程打印b，一个线程打印c，三个线程同时执行，要求打印出10个连着的abc。]()
+12. [自定义线程池，实现 excute 方式提交任务](algorithm/src/main/java/com/yanliang/algo/interview/threadpool/MyThreadPool1.java)
+13. [自定义线程池，实现 submit 方式提交任务](algorithm/src/main/java/com/yanliang/algo/interview/threadpool/MyThreadPool2.java)
+14. [自定义线程池，实现 excute & submit 方式提交任务](algorithm/src/main/java/com/yanliang/algo/interview/threadpool/MyThreadPool3.java)
+15. 
 
 
 
