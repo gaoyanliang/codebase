@@ -37,20 +37,21 @@ public class Test {
     }
 
     public static void main(String[] args) {
+        System.out.println();
 
-        Class cls = String.class;
-        cls.getDeclaredMethods();
-        for (int i = 0; i < 50; i++) {
-            RedPackage moneyPackage = new RedPackage();
-            moneyPackage.remainMoney = BigDecimal.valueOf(100);
-            moneyPackage.remainSize = 5;
-
-            while (moneyPackage.remainSize != 0) {
-                System.out.print(getRandomMoney(moneyPackage) + "   ");
-            }
-
-            System.out.println();
-        }
+//        Class cls = String.class;
+//        cls.getDeclaredMethods();
+//        for (int i = 0; i < 50; i++) {
+//            RedPackage moneyPackage = new RedPackage();
+//            moneyPackage.remainMoney = BigDecimal.valueOf(100);
+//            moneyPackage.remainSize = 5;
+//
+//            while (moneyPackage.remainSize != 0) {
+//                System.out.print(getRandomMoney(moneyPackage) + "   ");
+//            }
+//
+//            System.out.println();
+//        }
     }
 
     static class RedPackage {
