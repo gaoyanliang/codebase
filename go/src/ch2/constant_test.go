@@ -2,11 +2,25 @@ package try_test1
 
 import "testing"
 
+
+/**
+如何编写测试程序：
+1. 源码文件以_test 结尾：xxx_test.go
+2. 测试方法名以 Test 开头：func TestXXX (*testing.T) {...}
+ */
+
+/**
+与其他主要编程语言的差异
+1. 赋值可以进行自动类型推断
+2. 在一个赋值语句中可以对多个变量进行同时赋值
+ */
+
 func TestConstan(t *testing.T) {
 	t.Log("My first try!")
 }
 
 // ------------- 学习声明变量
+// 实现 Fibonacci 数列  1 1 2 3 5 8 ...
 func TestFib(t *testing.T) {
 	// var a int = 1
 	// var b int = 1
