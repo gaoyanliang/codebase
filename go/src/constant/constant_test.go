@@ -1,4 +1,4 @@
-package try_test1
+package constant
 
 import "testing"
 

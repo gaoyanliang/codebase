@@ -1,4 +1,4 @@
-package ch5
+package condition_and_loop
 
 import "testing"
 

@@ -1,4 +1,4 @@
-package ch6
+package array_and_slice
 
 import "testing"
 

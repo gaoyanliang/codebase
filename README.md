@@ -29,16 +29,23 @@
 
 [Go by example](https://gobyexample.com/)
 
+### 基础
+
 1. [Install](./go/doc/install.md)
 2. [Go 语言特性](./go/doc/go-feature.md)
-3. [Hello World](./go/src/ch1/hello_world.go)
-4. [变量&常量](./go/src/ch2/constant_test.go)
-5. [数据类型](./go/src/ch3/doc.md)
-6. [运算符](./go/src/ch4/doc.md)
-7. [条件和循环](./go/src/ch5/doc.md)
-8. [数据和切片](./go/src/ch6/doc.md)
-9. [Map 声明 访问 遍历](./go/src/ch7/doc.md)
-10. [Go 语言实现 Set](./go/src/ch8/doc.md)
+3. [Hello World](./go/src/hello_world/hello_world.go)
+4. [变量&常量](./go/src/constant/constant_test.go)
+5. [数据类型](./go/src/type/doc.md)
+6. [运算符](./go/src/operator/doc.md)
+7. [条件和循环](./go/src/condition_and_loop/doc.md)
+8. [数据和切片](./go/src/array_and_slice/doc.md)
+9. [Map 集合](./go/src/map/doc.md)
+10. [字符串](./go/src/string/doc.md)
+11. [函数](./go/src/function/doc.md)
+
+### 进阶
+
+12. []()
 
 
 ## tiny spring

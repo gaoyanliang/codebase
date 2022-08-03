@@ -1,4 +1,4 @@
-package ch7
+package _map
 
 import "testing"
 

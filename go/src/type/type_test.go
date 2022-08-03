@@ -1,4 +1,4 @@
-package try_test
+package _type
 
 import (
 	"math"

@@ -1,4 +1,4 @@
-package ch4
+package operator
 
 import "testing"
 
