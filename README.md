@@ -43,9 +43,14 @@
 10. [字符串](./go/src/string/doc.md)
 11. [函数](./go/src/function/doc.md)
 
+
 ### 进阶
 
-12. []()
+12. [数据与行为的封装](./go/src/encapsolution/doc.md)
+13. [接口](./go/src/interface/doc.md)
+14. [扩展&复用](./go/src/extension/extension_test.go)
+
+
 
 
 ## tiny spring
