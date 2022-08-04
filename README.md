@@ -68,13 +68,11 @@
 31. [sync pool 对象缓存](./go/src/sync_pool/sync_pool_test.go)
 32. [单元测试](./go/src/unit_test/function_test.go)
 33. [Benchmark](./go/src/benchmark/benchmark_test.go)
-34. []()
-35. []()
-36. []()
-37. []()
-38. []()
-39. []()
-40. []()
+34. [反射](./go/src/reflect/reflect_test.go)
+35. [Pipe filter](./go/src/pipe_filter/straight_pipeline_test.go)
+36. [json](./go/src/json/json_test.go)
+37. [http](./go/src/http/http.go)
+38. [http router](./go/src/restful/http_router.go)
 
 
 
