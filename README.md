@@ -73,6 +73,8 @@
 36. [json](./go_learn/src/json/json_test.go)
 37. [http](./go_learn/src/http/http.go)
 38. [http router](./go_learn/src/restful/http_router.go)
+39. [defer](./go_learn/src/src/defer/defer_test.go)
+40. [closure 闭包](./go/learn/doc/closure.md)
 
 
 
