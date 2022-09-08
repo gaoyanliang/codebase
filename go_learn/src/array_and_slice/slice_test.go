@@ -1,6 +1,9 @@
 package array_and_slice
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestSliceInit(t *testing.T) {
 	/* slice 切片
@@ -56,4 +59,18 @@ func TestSliceComparing(t *testing.T){
 	if sli0 == nil {
 		t.Log("equal")
 	}
+}
+
+func TestSlicePrint(t *testing.T) {
+	slice := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	// s1 从 slice 索引2（闭区间）到索引5（开区间，元素真正取到索引4），长度为3，容量默认到数组结尾，为8。
+	s1 := slice[2:5]
+
+	fmt.Printf("s1: %v", s1)
+	fmt.Println()
+	fmt.Println(s1)
+
+	s2 := make([]int, 3, 4)
+	s2[3] = 100
+	fmt.Println(s2)
 }

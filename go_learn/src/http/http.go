@@ -20,7 +20,8 @@ import (
 	"time"
 )
 
-func main() {
+// main1 -> main
+func main1() {
 	http.HandleFunc("/test", func(writer http.ResponseWriter, request *http.Request) {
 		writer.Write([]byte("test test test test test"))
 	})

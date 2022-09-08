@@ -25,6 +25,8 @@ func TestArrayGrow(t *testing.T)  {
 }
 
 func TestCaseFour(t *testing.T)  {
+	m := map[string]string{}
+	m["s"] = "s"
 	s := []int{1,2}
 	s = append(s,4,5,6)
 	fmt.Printf("len=%d, cap=%d",len(s),cap(s))

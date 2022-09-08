@@ -1,9 +1,11 @@
 package string
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 	"testing"
+	"unicode/utf8"
 )
 
 /*string是一个数据类型，不是指针或者引用类型
@@ -72,3 +74,21 @@ func TestConv(t *testing.T) {
 		t.Log("---compute error---")
 	}
 }
+
+// 3. 获取字符串长度
+
+func TestStringLen(t *testing.T) {
+	s := "中华人名共和国"
+	// len 字节长度：和编码无关
+	fmt.Println("s len = ", len(s))
+	// 字符数量，和编码有关
+	fmt.Println("s length = ", utf8.RuneCountInString(s))
+
+	s1 := "中华人名共和国--"
+	// len 字节长度：和编码无关
+	fmt.Println("s1 len = ", len(s1))
+	// 字符数量，和编码有关
+	fmt.Println("s1 length = ", utf8.RuneCountInString(s1))
+
+}
+
