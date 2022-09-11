@@ -90,7 +90,7 @@ public class FindAllAnagramsInAStringLC438 {
                 if (need[index] != 0) {
                     if (windows[index] == need[index]) valid--;
                     windows[index]--;
-                    // 一下两条语句不正确      why？？？？？？
+                    // 一下两条语句不正确      why？？？？？？     有可能窗口中本来就满足 windows[index] < need[index
                     //					windows[index] --;
                     //					if (windows[index] < need[index]) valid --;
                 }
