@@ -1,4 +1,4 @@
-package com.yanliang.algo.interview.threadpool;
+package com.yanliang.algo.interview.threadpool_demo;
 
 /**
  * 自己实现一个 线程池

@@ -1,8 +1,7 @@
-package com.yanliang.algo.interview.threadpool;
+package com.yanliang.algo.interview.threadpool_demo;
 
 import com.sun.tools.javac.util.Assert;
 
-import java.util.UUID;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;

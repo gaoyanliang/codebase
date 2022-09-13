@@ -1,6 +1,4 @@
-package com.yanliang.algo.interview.threadpool;
-
-import lombok.extern.slf4j.Slf4j;
+package com.yanliang.algo.interview.threadpool_demo;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -92,7 +90,7 @@ public class MyThreadPool3 implements ThreadPool<Runnable> {
 
     @Override
     public void addWorkers(int num) {
-        //加锁，防止该线程还么增加完成而下个线程继续增加导致工作者线程超过最大值
+        //加锁，防止该线程还没增加完成而下个线程继续增加导致工作者线程超过最大值
         synchronized (jobs) {
             if (num + this.workerNum > MAX_WORKER_NUMBERS) {
                 num = MAX_WORKER_NUMBERS - this.workerNum;
