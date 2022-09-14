@@ -1,6 +1,6 @@
 ## 双指针技巧
 
-## [链表](https://labuladong.gitee.io/algo/1/4/)
+### [链表相关](https://labuladong.gitee.io/algo/1/4/)
 
 [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/)
 [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)
@@ -18,7 +18,22 @@
 [剑指 Offer II 023. 两个链表的第一个重合节点](https://leetcode.cn/problems/3u1WK4/)
 [剑指 Offer II 078. 合并排序链表](https://leetcode.cn/problems/vvXgSW/)
 
+### [数组相关](https://labuladong.gitee.io/algo/1/5/)
 
+[167. 两数之和 II - 输入有序数组](https://leetcode.cn/problems/two-sum-ii-input-array-is-sorted/)
+[26. 删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/)
+[27. 移除元素](https://leetcode.cn/problems/remove-element/)
+[283. 移动零](https://leetcode.cn/problems/move-zeroes/)
+[344. 反转字符串](https://leetcode.cn/problems/reverse-string/)
+[5. 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/)
+[83. 删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/)
+[剑指 Offer 57. 和为s的两个数字](https://leetcode.cn/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
+[剑指 Offer II 006. 排序数组中两个数字之和](https://leetcode.cn/problems/kLl5u1/)
+
+
+### [滑动窗口](https://labuladong.gitee.io/algo/1/12/)
+
+[滑动窗口](../src/main/java/com/yanliang/algo/sliding_window/README.md)
 
 
 

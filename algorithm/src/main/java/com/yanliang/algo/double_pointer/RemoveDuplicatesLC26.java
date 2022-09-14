@@ -51,15 +51,29 @@ public class RemoveDuplicatesLC26 {
     public int removeDuplicates(int[] nums) {
         int fast = 0, slow = 0;
         while (fast < nums.length) {
-            if (fast == 0 || fast > 0 && nums[fast] != nums[fast - 1]) {
-                nums[slow] = nums[fast];
-                fast ++;
+            if (nums[fast] != nums[slow]) {
                 slow ++;
-            } else {
-                fast ++;
+                nums[slow] = nums[fast];
             }
+            fast ++;
         }
         return slow;
     }
 
+    // LC 83  83. 删除排序链表中的重复元素
+    // 给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。
+//    public ListNode deleteDuplicates(ListNode head) {
+//        if (head == null) return head;
+//        ListNode fast = head, slow = head;
+//
+//        while (fast != null) {
+//            if (fast.val != slow.val) {
+//                slow.next = fast;
+//                slow = slow.next;
+//            }
+//            fast = fast.next;
+//        }
+//        slow.next = null;
+//        return head;
+//    }
 }
