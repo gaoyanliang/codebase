@@ -5,7 +5,15 @@
 - [双指针技巧](algorithm/doc/double_point.md)
 - [经典面试题目](algorithm/doc/interview.md)
 
+
+## 数据库
+
+- [Mysql](./database/mysql.md)
+- [Redis](./database/redis.md)
+
 ## design patterns
+
+- [Design Patterns](./design-patterns/design_patterns.md)
 
 
 ## tiny spring
