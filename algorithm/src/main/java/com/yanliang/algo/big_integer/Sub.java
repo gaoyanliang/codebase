@@ -1,7 +1,7 @@
 package com.yanliang.algo.big_integer;
 
 /**
- * 大数相减
+ * 大数相减  https://leetcode.cn/circle/discuss/zVtfxd/view/b3QFhK/
  *
  * <p>题目描述 给定两个字符串形式的非负整数 num1 和num2 ，计算它们的差。
  *
@@ -53,6 +53,8 @@ public class Sub {
         }
         sb.reverse();
         int k;
+        // 反转字符，去除前导零
+        // 注意这里 sb.length() - 1,  1 - 1 结果要输出 0
         for (k = 0; k < sb.length() - 1; k++) {
             if (sb.charAt(k) != '0') break;
         }
