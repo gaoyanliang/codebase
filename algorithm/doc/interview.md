@@ -36,7 +36,8 @@
 - [对象初始化打印顺序](../src/main/java/com/yanliang/algo/interview/Print.java)
 - [两个有序的整数数组求交集](../src/main/java/com/yanliang/algo/interview/SortArrayIntersection.java)
 - [检查程序内存泄漏](../src/main/java/com/yanliang/algo/interview/MyStack.java)
-
+- [实现 LRU 缓存](../src/main/java/com/yanliang/algo/interview/lru/LRUCache.java)
+- [实现 LFU 缓存](../src/main/java/com/yanliang/algo/interview/lfu/LFUCache.java)
 
 
 
