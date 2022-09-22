@@ -1,6 +1,9 @@
 package com.yanliang.algo.sort;
 
+import java.util.Random;
+
 /**
+ * https://leetcode.cn/problems/kth-largest-element-in-an-array/
  * 215. 数组中的第K个最大元素 给定整数数组 nums 和整数 k，请返回数组中第 k 个最大的元素。
  *
  * <p>请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。
@@ -15,9 +18,13 @@ package com.yanliang.algo.sort;
  *
  * <p>1 <= k <= nums.length <= 104 -104 <= nums[i] <= 104
  *
+ * 你必须设计并实现时间复杂度为 O(n) 的算法解决此问题。
+ *
  * @author yanliang
  */
 public class FindKthLargestLC215 {
+
+    static Random random = new Random();
 
     public static void main(String[] args) {
         int[] nums = {3, 2, 1, 5, 6, 4};
@@ -27,42 +34,37 @@ public class FindKthLargestLC215 {
     }
 
     public static int findKthLargest(int[] nums, int k) {
-        int len = nums.length;
-        if (k > len) return -1;
-
-        int l = 0, r = len - 1;
-        int target = k - 1;
-        while (true) {
-            int index = partition(nums, l, r);
-            if (index == target) return nums[index];
-            else if (index > target) r = index - 1;
-            else l = index + 1;
-        }
+        return quickSort(nums, 0, nums.length - 1, nums.length - k);
     }
 
-    public static int partition(int[] nums, int left, int right) {
-        int tmp = nums[right];
-        int j = left - 1;
-        for (int i = left; i < right; i++) {
-            if (nums[i] >= tmp) {
-                j++;
-                swap(nums, i, j);
-            }
+    public static int quickSort(int[] nums, int l, int r, int k){
+        int index = partition(nums, l, r);
+        if (index == k) return nums[index];
+        if (k < index) return quickSort(nums, l, index - 1, k);
+        else return quickSort(nums, index + 1, r, k);
+    }
+
+    public static int partition(int[] nums, int l, int r) {
+        int index = random.nextInt(r - l + 1) + l;
+        swap(nums, index, r);
+        int k = l - 1, tmp = nums[r];
+        for (int i = l; i < r; i ++) {
+            if (nums[i] < tmp) swap(nums, i, ++ k);
         }
-        swap(nums, ++j, right);
-        return j;
+        swap(nums, r, ++ k);
+        return k;
     }
 
     /**
      * 交换对应下标的数据
      *
      * @param nums
-     * @param a
-     * @param b
+     * @param l
+     * @param r
      */
-    public static void swap(int[] nums, int a, int b) {
-        int tmp = nums[a];
-        nums[a] = nums[b];
-        nums[b] = tmp;
+    public static void swap(int[] nums, int l, int r) {
+        int tmp = nums[l];
+        nums[l] = nums[r];
+        nums[r] = tmp;
     }
 }

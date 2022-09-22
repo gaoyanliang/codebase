@@ -1,5 +1,7 @@
 package com.yanliang.algo.test;
 
+import java.util.Hashtable;
+
 /**
  * @author yanliang
  */

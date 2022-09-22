@@ -19,7 +19,7 @@ import java.util.Random;
  *
  * @author yanliang
  */
-public class QuickSortLC912 {
+public class QuickSort {
 
     private static Random random = new Random();
 
