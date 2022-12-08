@@ -1,6 +1,7 @@
 package com.yanliang.algo.sort;
 
 import java.util.Random;
+import java.util.Stack;
 
 /**
  * 快速排序
@@ -71,4 +72,51 @@ public class QuickSort {
         }
         System.out.println();
     }
+
+
+    // ---------------- 非递归实现
+    public int[] sortArray(int[] nums) {
+        int start = 0;
+        int end = nums.length-1;
+        Stack<Integer> stack = new Stack<>();
+        if(start <  end)
+        {
+            stack.push(end);
+            stack.push(start);
+            while(!stack.isEmpty())
+            {
+                int l = stack.pop();
+                int r = stack.pop();
+                int index = partition_(nums,l,r);
+                if(l < index-1)
+                {
+                    stack.push(index-1);
+                    stack.push(l);
+                }
+                if(r > index+1)
+                {
+                    stack.push(r);
+                    stack.push(index+1);
+                }
+            }
+        }
+        return nums;
+    }
+
+    private int partition_(int[] a,int start,int end)
+    {
+        int point = a[start];
+        while(start < end)
+        {
+            while(start < end && a[end] >= point)
+                end--;
+            a[start] = a[end];
+            while(start < end && a[start] <= point)
+                start++;
+            a[end] = a[start];
+        }
+        a[start] = point;
+        return start;
+    }
+
 }

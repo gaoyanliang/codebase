@@ -1,9 +1,12 @@
 package com.yanliang.algo.test;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 /** @author yanliang */
 public class Test {
+
 
     public static BigDecimal getRandomMoney(RedPackage _redPackage) {
         // remainSize 剩余的红包数量
@@ -37,6 +40,12 @@ public class Test {
     }
 
     public static void main(String[] args) {
+
+        List<Father> fatherList = new ArrayList<>();
+        List<Child> children = new ArrayList<>();
+
+        List<Father> fathers = children;
+
         System.out.println();
 
 //        Class cls = String.class;
