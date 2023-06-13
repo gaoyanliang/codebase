@@ -46,3 +46,15 @@ func TestTravelMsp(t *testing.T) {
 		t.Log(k, v)
 	}
 }
+
+func TestMapAdd(t *testing.T) {
+	players := map[string]string{}
+
+	players["gao"] = "gao"
+	players["yan"] = "yan"
+
+	for k, v := range players {
+		t.Log(k, v)
+	}
+
+}
