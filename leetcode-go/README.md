@@ -20,8 +20,9 @@
 3. [x] [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/)
 4. [x] [1. 两数之和](https://leetcode.cn/problems/two-sum/)
 5. [x] [102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/)
-
-
+6. [x] [2733. 既不是最小值也不是最大值](https://leetcode.cn/problems/neither-minimum-nor-maximum/)
+7. [x] [2734. 执行子串操作后的字典序最小字符串](https://leetcode.cn/problems/lexicographically-smallest-string-after-substring-operation/)
+8. [x] [2735. 收集巧克力](https://leetcode.cn/problems/collecting-chocolates/)
 
 
 ### 2023-06-16
