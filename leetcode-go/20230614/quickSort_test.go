@@ -54,7 +54,7 @@ package _0230614
 //
 //	index, p := l-1, nums[r]
 //	for i := l; i < r; i++ {
-//		if nums[i] < p {
+//		if nums[i] < p {  // 添加判断，if i ！= index 时在进行交换，否则会超时
 //			index++
 //			nums[i], nums[index] = nums[index], nums[i]
 //		}
