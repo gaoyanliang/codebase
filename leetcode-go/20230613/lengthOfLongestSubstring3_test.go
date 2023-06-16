@@ -2,36 +2,32 @@ package _0230613
 
 import "testing"
 
-func lengthOfLongestSubstring(s string) int {
+func lengthOfLongestSubstring(s string) (ans int) {
 
 	if 0 == len(s) {
-		return 0
+		return
 	}
 
-	left, right, res := 0, 0, 0
-	var flag [256]bool
+	left := 0
+	flag := [256]bool{}
 
-	for right < len(s) {
-		if flag[s[right]] {
+	for i := 0; i < len(s); i++ {
+		for flag[s[i]] {
 			flag[s[left]] = false
 			left++
-		} else {
-			flag[s[right]] = true
-			right++
 		}
+		flag[s[i]] = true
 
-		if res < right-left {
-			res = right - left
-		}
-
-		if left+res > len(s) || right >= len(s) {
-			break
-		}
-
+		ans = max(ans, i-left+1)
 	}
+	return
+}
 
-	return res
-
+func max(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
 }
 
 func TestLengthOfLongestSubstring(t *testing.T) {

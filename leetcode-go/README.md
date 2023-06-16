@@ -25,6 +25,9 @@
 8. [x] [2735. 收集巧克力](https://leetcode.cn/problems/collecting-chocolates/)
 9. [x] [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)
 
-
 ### 2023-06-16
+
+[713. 乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/)
+[1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/description/)
+[1658. 将 x 减到 0 的最小操作数](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/description/)
 
