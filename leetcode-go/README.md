@@ -27,7 +27,11 @@
 
 ### 2023-06-16
 
-[713. 乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/)
-[1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/description/)
-[1658. 将 x 减到 0 的最小操作数](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/description/)
+1. [x] [713. 乘积小于 K 的子数组](https://leetcode.cn/problems/subarray-product-less-than-k/)
+2. [x] [1004. 最大连续1的个数 III](https://leetcode.cn/problems/max-consecutive-ones-iii/description/)
+3. [x] [1658. 将 x 减到 0 的最小操作数](https://leetcode.cn/problems/minimum-operations-to-reduce-x-to-zero/description/)
+4. [x] [1234. 替换子串得到平衡字符串](https://leetcode.cn/problems/replace-the-substring-for-balanced-string/)
 
+### 2023-06-17
+
+[2481. 分割圆的最少切割次数](https://leetcode.cn/problems/minimum-cuts-to-divide-a-circle/description/)
