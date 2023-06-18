@@ -35,3 +35,9 @@
 ### 2023-06-17
 
 [2481. 分割圆的最少切割次数](https://leetcode.cn/problems/minimum-cuts-to-divide-a-circle/description/)
+[16. 最接近的三数之和](https://leetcode.cn/problems/3sum-closest/description/)
+[611. 有效三角形的个数](https://leetcode.cn/problems/valid-triangle-number/description/)
+
+### 2023-06-18 weekly-contest-350
+
+
