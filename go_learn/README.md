@@ -19,6 +19,11 @@
 
 - []()
 
+## 实战
+
+- [simpledict 命令行词典](./src/simpledict)
+- [猜谜游戏](./src/guessing/main.go)
+
 资料：
 
 - [第二讲：Golang协程调度器原理与GMP设计思想.pdf](./pdf/第二讲：Golang协程调度器原理与GMP设计思想.pdf)
