@@ -18,13 +18,12 @@
 - [Design Patterns](./design-patterns/design_patterns.md)
 
 
-## tiny spring
+## 项目
 
-https://github.com/qqxx6661/tinySpring
-
-## Go
-
-[Go 一些基础操作](./go_learn)
+- [tiny spring](https://github.com/qqxx6661/tinySpring)
+- [go 基础练习代码](./go_learn/)
+- [go gin 练习代码](./gin-demo/)
+- [go 邮件定时发送项目](./email-sender/)
 
 
 
