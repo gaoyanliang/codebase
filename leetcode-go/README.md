@@ -34,10 +34,14 @@
 
 ### 2023-06-17
 
-[2481. 分割圆的最少切割次数](https://leetcode.cn/problems/minimum-cuts-to-divide-a-circle/description/)
-[16. 最接近的三数之和](https://leetcode.cn/problems/3sum-closest/description/)
-[611. 有效三角形的个数](https://leetcode.cn/problems/valid-triangle-number/description/)
+1. [x] [2481. 分割圆的最少切割次数](https://leetcode.cn/problems/minimum-cuts-to-divide-a-circle/description/)
+2. [x] [16. 最接近的三数之和](https://leetcode.cn/problems/3sum-closest/description/)
+3. [x] [611. 有效三角形的个数](https://leetcode.cn/problems/valid-triangle-number/description/)
 
-### 2023-06-18 weekly-contest-350
+### 2023-08-20 weekly-contest-359
+
+1. [x] [7004. 判别首字母缩略词](https://leetcode.cn/contest/weekly-contest-359/problems/check-if-a-string-is-an-acronym-of-words/)
+2. [x] [6450. k-avoiding 数组的最小总和](https://leetcode.cn/contest/weekly-contest-359/problems/determine-the-minimum-sum-of-a-k-avoiding-array/)
+
 
 

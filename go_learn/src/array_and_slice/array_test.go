@@ -1,6 +1,8 @@
 package array_and_slice
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestArrayInit(t *testing.T) {
 	var arr [3]int
