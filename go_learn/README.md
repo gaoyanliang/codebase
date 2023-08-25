@@ -23,6 +23,7 @@
 
 - [simpledict 命令行词典](./src/simpledict)
 - [猜谜游戏](./src/guessing/main.go)
+- [使用 golang 实现广播功能](./src/broadcast)
 
 资料：
 
